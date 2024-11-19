@@ -1,0 +1,201 @@
+/* General Reset and Utility Classes */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+/* Header Styling */
+.header {
+    font-family: 'Arial', sans-serif;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo-img {
+    height: 50px;
+}
+
+.brand-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #343a40;
+    margin-left: 10px;
+}
+
+.contact-text {
+    font-size: 14px;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+/* Button Styling */
+.btn-auth {
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    padding: 6px 16px;
+    transition: transform 0.1s ease, box-shadow 0.3s ease; /* Faster transform */
+}
+
+.btn-auth:hover {
+    transform: translateY(-1px); /* Keep the movement effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .contact-info {
+        display: none;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    .auth-buttons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+
+
+
+
+/* Navbar */
+.navbar.bg-color {
+    background-color: #893fff;
+    display: flex;
+    justify-content: flex-start; /* Align menus to the left */
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.navbar .navbar-brand {
+    color: #ffffff;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.navbar .nav-link {
+    color: #ffffff;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+    background-color: #7d28b9; /* Dark square color effect */
+    color: #ffffff;
+    border-radius: 0.25rem; /* To create a square/box effect */
+    text-decoration: none;
+}
+
+/* Main Section */
+.main-section {
+    background: linear-gradient(to right, #e3f2fd, #bbdefb);
+    text-align: center;
+    position: relative;
+    padding: 5rem 1rem;
+    overflow: hidden;
+}
+
+.main-section .background-shape {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    width: 200%;
+    height: 150px;
+    background: #90caf9;
+    transform: rotate(10deg);
+    z-index: 0;
+    opacity: 0.2;
+}
+
+.main-section h1 {
+    z-index: 1;
+    position: relative;
+}
+
+.main-section p {
+    color: #6c757d;
+    font-size: 1.2rem;
+    z-index: 1;
+}
+
+/* Buttons */
+/* .btn {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+} */
+
+/* Statistics Section */
+.statistics {
+    background: linear-gradient(to right, #6a1b9a, #8e24aa);
+    text-align: center;
+    padding: 5rem 1rem;
+    color: #ffffff;
+}
+
+.stat-card {
+    background: #ffffff;
+    color: #6a1b9a;
+    transition: transform 0.3s;
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+.footer {
+    background-color: #4c6ef5;
+    color: #ffffff;
+    padding: 2rem 0;
+}
+
+.footer .footer-title {
+    font-weight: 700;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.footer a {
+    color: #e3f2fd;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #bbdefb;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar .nav-link {
+        text-align: left;
+        width: 100%; /* Stack links on small screens */
+        padding: 0.5rem;
+    }
+
+    .main-section {
+        padding: 3rem 1rem;
+    }
+
+    .statistics {
+        padding: 3rem 1rem;
+    }
+}
