@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'My Laravel App')</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Icons CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
     <link rel="stylesheet" href="{{ asset('css/homepage.css') }}">
 </head>
 
@@ -90,7 +93,7 @@
     <section class="statistics bg-gradient text-white py-5">
         <div class="container text-center">
             <!-- Section Title -->
-            <h2 class="fw-bold mb-5">
+            <h2 class="fw-bold mb-5 text-dark">
                 Our Achievements
             </h2>
 
@@ -118,25 +121,30 @@
         </div>
     </section>
 
-    <footer class="footer bg-light text-dark py-4">
+    <footer class="footer bg-dark text-light py-3">
         <div class="container">
             <div class="row">
+                <!-- About Us Section -->
                 <div class="col-lg-4 mb-4">
-                    <h5 class="footer-title">About Us</h5>
+                    <h5 class="footer-title text-white">About Us</h5>
                     <p>We are a dedicated team providing solutions for various sectors. Our focus is on efficiency,
                         innovation, and customer satisfaction.</p>
                 </div>
+
+                <!-- Quick Links Section -->
                 <div class="col-lg-4 mb-4">
-                    <h5 class="footer-title">Quick Links</h5>
+                    <h5 class="footer-title text-white">Quick Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#" class="text-dark">Home</a></li>
-                        <li><a href="#" class="text-dark">About</a></li>
-                        <li><a href="#" class="text-dark">Services</a></li>
-                        <li><a href="#" class="text-dark">Contact</a></li>
+                        <li><a href="#" class="text-light">Home</a></li>
+                        <li><a href="#" class="text-light">About</a></li>
+                        <li><a href="#" class="text-light">Services</a></li>
+                        <li><a href="#" class="text-light">Contact</a></li>
                     </ul>
                 </div>
+
+                <!-- Contact Info Section -->
                 <div class="col-lg-4 mb-4">
-                    <h5 class="footer-title">Contact Info</h5>
+                    <h5 class="footer-title text-white">Contact Info</h5>
                     <ul class="list-unstyled">
                         <li><i class="bi bi-geo-alt-fill fs-4 me-3"></i>123 Main Street, Suite 456, City, Country</li>
                         <li><i class="bi bi-phone-fill fs-4 me-3"></i>+123 456 7890</li>
@@ -144,13 +152,26 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- Social Media and Newsletter Section -->
             <div class="row justify-content-center mt-4">
+                <div class="col-auto mb-2">
+                    <a href="#" class="text-light me-3"><i class="bi bi-facebook fs-4"></i></a>
+                    <a href="#" class="text-light me-3"><i class="bi bi-twitter fs-4"></i></a>
+                    <a href="#" class="text-light me-3"><i class="bi bi-linkedin fs-4"></i></a>
+                    <a href="#" class="text-light"><i class="bi bi-instagram fs-4"></i></a>
+                </div>
+            </div>
+
+            <!-- Copyright Info -->
+            <div class="row justify-content-center mt-1">
                 <div class="col-auto">
                     <p class="text-center mb-0">© 2024 Your Company. All Rights Reserved.</p>
                 </div>
             </div>
         </div>
     </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
